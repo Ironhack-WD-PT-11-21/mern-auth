@@ -4,7 +4,7 @@ import axios from 'axios';
 export const Navbar = (props) => {
 
     const handleLogout = () => {
-        axios.get('http://localhost:5005/api/logout')
+        axios.get('http://localhost:5005/api/logout', { withCredentials: true })
             .then(() => props.setLoggedInUser(null))
             .catch(err => console.log(err))
     }
