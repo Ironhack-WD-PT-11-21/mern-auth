@@ -1,0 +1,77 @@
+.App {
+  text-align: center;
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  border: none;
+  background-color: #ddd;
+  text-align: center;
+}
+
+header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 50px;
+  box-shadow: 0px 10px 13px -7px #E0E0E0,
+    5px 5px 15px 5px rgb(0 0 0 / 0%);
+}
+
+header>nav {
+  display: flex;
+  gap: 20px;
+}
+
+header>nav>a.active {
+  color: red;
+  border-bottom: solid 1px red;
+}
+
+#main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1:not(#logo) {
+  margin: 0;
+  position: absolute;
+}
+
+h1._0 {
+  top: calc(50vh - 10px);
+  font-size: 20px;
+}
+
+h1._1 {
+  top: calc(50vh - 20px);
+  font-size: 40px;
+}
+
+h1._2 {
+  top: calc(50vh - 30px);
+  font-size: 60px;
+}
+
+h1._3 {
+  top: calc(50vh - 300px);
+  font-size: 300px;
+  width: 100vw;
+  word-wrap: break-word;
+}
